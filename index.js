@@ -29,18 +29,32 @@ app.get('/', (req, res) => {
     res.render('accueil')
     })
 
-//Afficher vue Quizz
-.get('/quizz', function(req, res) {
-    res.render('quizz')
+//Afficher vue dépôt ordonnance
+.get('/addOrdonnance', function(req, res) {
+    res.render('addOrdonnance')
     })
 
-
-.get('/jeu', function(req, res) {
-    res.render('jeu')
+//Afficher vue ajout patient
+.get('/addPatient', function(req, res) {
+    res.render('addPatient')
     })
 
-
-.get('/infos', function(req, res) {
-    res.render('infos')
+//Afficher vue ajout medicament au stock
+.get('/addMedicament', function(req, res) {
+    res.render('addMedicament')
     })
 
+//Afficher vue consulter ordonnance
+.get('/consultOrdonnance', function(req, res) {
+    res.render('consultOrdonnance')
+    })
+
+//Afficher vue consulter la liste des patients
+.get('/consultListePatient', function(req, res) {
+    res.render('consultListePatient')
+    })
+
+//Afficher vue consulter les stocks
+.get('/consultStock', function(req, res) {
+    res.render('consultStock')
+    })
