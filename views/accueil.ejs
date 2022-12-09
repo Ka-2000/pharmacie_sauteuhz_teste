@@ -1,3 +1,5 @@
+<%- include('header') %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,25 +8,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>SexInfo</title>
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        <div class="bckgrnd">
-            
-            <div class="image">
-                <img src="/images/logoSexInfo.png" width="75" height="75">
-            </div>
-            
-            <div class="title">
-                <h1>Bienvenue sur SexInfo</h1>
-            </div>
-            
-            <a href="http://sexneeet.alwaysdata.net/infos"><button  type="button" class="btn btn-square-xl button1">Informations</button></a>
-            
-            <a href="http://sexneeet.alwaysdata.net/accueiljeu"><button type="button" class="btn btn-square-xl button2">Divertissements</button></a>
-            
+    <div class="bckgrnd">
+        <div class="title">
+            <h1>PHARMACIE SAUTEUHZ</h1>
+        </div>
+        
+        <div class="text1"> 
+            <p><span>Prendre soin de nos patients </span><br> en quelques clics !</p>
+        </div>
+        
+        <div class="text2">
+            <p><span>La Pharmacie sauteuhz </span><br> est le réseau n°1 en ligne de gestion de client.</p>
+        </div>
+        
+        <div class="text3">
+            <p>Le réseau Pharmacie Sauteuhz est là pour vous aider</p>
+        </div>
+        
+        <div class="image">
+            <img src="images/logoPharmacie.png" alt="logoPharmacie">
+        </div>
+        
+        <div class="btn btn-light btn-block">    
+            <a href="http://localhost:3000/addOrdonnance"><button type="button" class="btn btn-default btn-lg btn-custom-lg button1">Déposer une ordonnance</button></a>
+            <a href="http://localhost:3000/addPatient"><button type="button" class="btn btn-square-xl button2">Ajouter un nouveau patient</button></a>
+            <a href="http://localhost:3000/addMedicament"><button type="button" class="btn btn-square-xl button3">Ajouter un médicament au stock</button></a>
+            <a href="http://localhost:3000/consultOrdonnance"><button type="button" class="btn btn-square-xl button4">Consulter une ordonnance</button></a>
+            <a href="http://localhost:3000/consultListePatient"><button type="button" class="btn btn-square-xl button5">Consulter la fiche d'un patient</button></a>
+            <a href="http://localhost:3000/consultStock"><button type="button" class="btn btn-square-xl button6">Consulter les stocks</button></a>
         </div>
     </div>
 </body>
 </html>
+
+<%- include('footer') %>
