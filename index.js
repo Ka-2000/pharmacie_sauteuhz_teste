@@ -29,9 +29,9 @@ app.get('/', (req, res) => {
     res.render('accueil')
     })
 
-//Afficher vue Quizz
-.get('/quizz', function(req, res) {
-    res.render('quizz')
+//Afficher vue pour deposer une ordonnance
+.get('/addOrdonnance', function(req, res) {
+    res.render('addOrdonnance')
     })
 
 
@@ -43,4 +43,12 @@ app.get('/', (req, res) => {
 .get('/infos', function(req, res) {
     res.render('infos')
     })
+
+.get('/infos', function(req, res) {
+    res.render('infos')
+    })
+
+    .get('/infos', function(req, res) {
+    res.render('infos')
+    }) 
 

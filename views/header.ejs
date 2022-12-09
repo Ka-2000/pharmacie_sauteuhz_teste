@@ -12,10 +12,10 @@
 <body>
   <nav class="navbar navbar-light" style="background-color: #78E08F;">
     <a class="navbar-brand" href="http://localhost:3000/infos">
-      <img src="images/iconPharmacie.png" width="30" height="30" class="d-inline-block align-top" alt="">
-      PHARMACIE SAUTEUHZ
-    </a>
-    <div class="pos-f-t">
+      <img src="images/iconPharmacie.png" width="30" height="30" class="logoheader" class="d-inline-block align-top" alt="logoHeader"> PHARMACIE SAUTEUHZ </a>
+      <button type="button" class="btn btn-success" class="btnContacts">Nous contacter</button>
+    
+      <!-- <div class="pos-f-t">
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
           <h4 class="text-white">Menu</h4>
@@ -26,15 +26,58 @@
           <button type="button" class="btn btn-success">Consulter la fiche d'un patient</button>
           <button type="button" class="btn btn-success">Consulter les stocks</button>
           <button type="button" class="btn btn-success">Nous contacter</button>
-          
-          
         </div>
-      </div>
-      <nav class="navbar navbar-light" style="background-color: #78E08F;">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      </div> -->
+
+      <!-- <nav class="navbar navbar-light" style="background-color: #78E08F;">
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      </nav>
+      </nav> -->
+
+      <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+          <li><a href="#">Déposer une ordonnance</a></li>
+          <li><a href="#">Ajouter un nouveau patient</a></li>
+          <li><a href="#">Ajouter un médicament en stock</a></li>
+          <li><a href="#">Consulter une ordonnance</a></li>
+          <li><a href="#">Consulter la fiche d'un patient</a></li>
+          <li><a href="#">Consulter les stocks</a></li>
+          <li><a href="#">Nous contacter</a></li>
+          <li><a href="#">Identifiez-vous</a></li>
+        </ul>
+      </div>
+      
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+
+      <!------------------- MENU BURGER -------------------------->
+      <script>
+      var sidenav = document.getElementById("mySidenav");
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        
+        openBtn.onclick = openNav;
+        closeBtn.onclick = closeNav;
+        
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+          sidenav.classList.add("active");
+        }
+        
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+          sidenav.classList.remove("active");
+        }
+        </script>
+      <!-- ---------------------------------------------------- -->
+
     </div>
   </nav>
   

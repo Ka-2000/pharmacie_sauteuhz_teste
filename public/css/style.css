@@ -1,3 +1,10 @@
+.body {
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 1.8em;
+    position: absolute;
+}
+
+
 .bckgrnd {
     width: auto;
     height: 1080px;
@@ -6,9 +13,9 @@
 }
 
 .image {
-    width : 300px;
+    width : 100%;
     position : absolute;
-    left : 68%;
+    left : 65%;
     top: 20%;
     margin-left : -150px;
 }
@@ -31,7 +38,6 @@
     position: absolute;
     text-align: center;
     left : 15%;
-    top : 75%;
     background-color: #FAB1A0;
 }
 
@@ -44,7 +50,6 @@
     position: absolute;
     text-align: center;
     left : 43%;
-    top : 75%;
     background-color: #55EFC4;
 }
 
@@ -57,7 +62,6 @@
     position: absolute;
     text-align: center;
     left : 71%;
-    top : 75%;
     background-color: #D63031;
 }
 
@@ -70,7 +74,7 @@
     position: absolute;
     text-align: center;
     left : 15%;
-    top : 95%;
+    margin-top : 15%;
     background-color: #FD79A8;
 }
 
@@ -83,7 +87,7 @@
     position: absolute;
     text-align: center;
     left : 43%;
-    top : 95%;
+    margin-top : 15%;
     background-color: #A29BFE;
 }
 
@@ -96,11 +100,15 @@
     position: absolute;
     text-align: center;
     left : 71%;
-    top : 95%;
+    margin-top : 15%;
     background-color: #74B9FF;
 }
 
-.text1 {
+.espace {
+    margin-top: 15%;
+}
+
+/* .text1 {
     font-family: DejaVu Sans Mono, monospace;
     font-size: 1.8em;
     position: absolute;
@@ -122,10 +130,92 @@
     position: absolute;
     top : 50%;
     left : 10%;
-}
+} */
 
 .row {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#scroll_to_top {
+	position: fixed;
+	width: 50px;
+	height: 5px;
+	bottom: 50px;
+	right: 30px;
+  }
+  #scroll_to_top img {
+	width: 55px;
+  }
+
+
+.logoheader {
+    margin-left: 10%;
+}
+
+.btnContacts{
+    margin-left: 20%;
+}
+
+
+
+
+
+/*---------------------------MENU BURGER--------------------------*/
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #565353;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  border-radius: 20%;
+  margin-left: -50%;
 }
