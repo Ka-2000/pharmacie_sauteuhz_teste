@@ -108,7 +108,7 @@
     margin-top: 15%;
 }
 
-/* .text1 {
+.text1 {
     font-family: DejaVu Sans Mono, monospace;
     font-size: 1.8em;
     position: absolute;
@@ -130,7 +130,7 @@
     position: absolute;
     top : 50%;
     left : 10%;
-} */
+} 
 
 .row {
     display: flex;

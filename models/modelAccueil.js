@@ -16,24 +16,7 @@ mysqlconnexion.connect((err) => {
     else console.log('BDD connexion échouée \n Erreur: '+JSON.stringify(err))
 })
 
-const quizz = {
-
-    afficherQR () {
-
-        let requete = "SELECT * FROM questions, reponses"
-        mysqlconnexion.query(requete, (req, res) => {
-            if (!err) {
-                console.log(lignes);
-                res.render("quizz", {quizz : lignes});
-            }
-        })
-    }
-};
-    
-
-
 
 
 module.exports = {
-    quizz
 };

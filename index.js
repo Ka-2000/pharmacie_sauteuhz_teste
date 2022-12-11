@@ -29,11 +29,7 @@ app.get('/', (req, res) => {
     res.render('accueil')
     })
 
-<<<<<<< HEAD
-//Afficher vue pour deposer une ordonnance
-=======
 //Afficher vue dépôt ordonnance
->>>>>>> e911b658e1f69b60c7eba1633a6ba7a85f9f6dc0
 .get('/addOrdonnance', function(req, res) {
     res.render('addOrdonnance')
     })
@@ -48,16 +44,6 @@ app.get('/', (req, res) => {
     res.render('addMedicament')
     })
 
-<<<<<<< HEAD
-.get('/infos', function(req, res) {
-    res.render('infos')
-    })
-
-    .get('/infos', function(req, res) {
-    res.render('infos')
-    }) 
-
-=======
 //Afficher vue consulter ordonnance
 .get('/consultOrdonnance', function(req, res) {
     res.render('consultOrdonnance')
@@ -72,4 +58,3 @@ app.get('/', (req, res) => {
 .get('/consultStock', function(req, res) {
     res.render('consultStock')
     })
->>>>>>> e911b658e1f69b60c7eba1633a6ba7a85f9f6dc0
