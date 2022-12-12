@@ -3,7 +3,54 @@
 <html lang="en">
     <%- include('header') %>
 <body>
-    fgjkfdhj
+    <div class="container w-75 d-flex justify-content-center p-4 mb-2 text-black">
+        <h1> Saisie d'une ordonnance </h1>
+    </div>
+    <hr>
+
+    <div id="saisie" class="container w-50 p-2 md-2">
+        <div class="input-group">
+            <span class="input-group-text" id="">Client</span>
+            <input type="text" class="form-control" id="client" placeholder="">
+        </div><br>
+        
+        <div class="input-group">
+            <span class="input-group-text" id="">Pathologie</span>
+            <input type="text" class="form-control" id="patho" placeholder="">
+        </div><br>
+
+        <div class="input-group">
+            <span class="input-group-text" id="">Date de l'ordonnance</span>
+            <input type="date" class="form-control" id="dateOrdo" placeholder="">
+        </div><br>
+
+
+        <div class="container w-75 d-flex justify-content-center p-2 mb-2 text-black">
+            <h3> Médicament préscrit </h3>
+        </div>
+        <hr>
+
+        <div class="input-group">
+            <span class="input-group-text" id="">Médicament :</span>
+            <input type="text" class="form-control" id="medicament" placeholder="">
+            <span class="input-group-text" id="">Quantité :</span>
+            <input type="number" class="form-control" id="qteMedicament" placeholder="">
+        </div><br>
+
+        <div class="input-group">
+            <span class="input-group-text" id="">Fréquence :</span>
+            <input type="text" class="form-control" id="frequence" placeholder="">
+            <span class="input-group-text" id="">Date de fin :</span>
+            <input type="date" class="form-control" id="finTraitement" placeholder="">
+        </div><br>
+
+        <div class="input-group">
+            <span class="input-group-text" id="">Durée du traitement :</span>
+            <input type="texte" class="form-control" id="dureeTraitement" placeholder="">
+        </div><br><br>
+
+        <button type="button" class="btn btn-secondary w-100">Valider</button><br>
+    </div>
 </body>
 <%- include('footer') %>
 </html>
