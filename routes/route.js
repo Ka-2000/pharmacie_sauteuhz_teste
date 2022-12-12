@@ -35,7 +35,7 @@ routeur.get('/liste_mutuelles', ctrlMutuelle.afficher_liste_mutuelles)
 .post('/delete_mutuelle/:id', ctrlMutuelle.delete_fiche_mutuelle)
 
 // Partie Maladie
-routeur.get('/liste_pathologies', ctrlMaladie.afficher_liste_pathologie)
+routeur.get('/liste_pathologies', ctrlMaladie.afficher_liste_pathologies)
 .get('/formulaire_pathologie', ctrlMaladie.afficher_formulaire_pathologie)
 .get('/fiche_pathologie/:id', ctrlMaladie.afficher_fiche_pathologie)
 .post('/formulaire_pathologie', ctrlMaladie.executer_formulaire_pathologie)
