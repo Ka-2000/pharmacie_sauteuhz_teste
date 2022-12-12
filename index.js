@@ -13,7 +13,7 @@ let app = express()
 app.set('view engine', 'ejs')
 app.use(express.static('views'))
 app.use(express.static('public'))
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 
 app.set("views",path.resolve(__dirname,'views'))
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
@@ -28,11 +28,12 @@ app.get('/', (req, res) => {
     res.send('Le serveur Pharmacie Sauteuhz est actif !')
 })
 
-/*
+
 //Afficher page accueil
 .get('/accueil', function(req, res) {
     res.render('accueil')
     })
+
 
 //Afficher vue dépôt ordonnance
 .get('/addOrdonnance', function(req, res) {
@@ -63,6 +64,5 @@ app.get('/', (req, res) => {
 .get('/consultStock', function(req, res) {
     res.render('consultStock')
     }) 
-*/
 
 app.use('/pharmacie_sauteuhz_test', routeur)

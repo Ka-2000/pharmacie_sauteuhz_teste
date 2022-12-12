@@ -4,10 +4,7 @@
 // création du routeur Express pour ce module
 const express = require('express');
 const routeur = express.Router();
-<<<<<<< HEAD
-const sexinfoControle = require('../controllers/controlAccueil.js');
-=======
->>>>>>> 7e80760b8ad4f96683f3e2f70c471d50205f24db
+
 
 var ctrlAccueil = require('../controllers/ControlAccueil')
 var ctrlMedecin = require('../controllers/ControlMedecins');
