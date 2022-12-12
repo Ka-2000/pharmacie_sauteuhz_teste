@@ -3,7 +3,7 @@
 var db = require('../connexion/loading');
 
 module.exports= {
-    afficher_accueil:function(callback){
+/*     afficher_accueil:function(callback){
         var sql ='SELECT * FROM Medicaments';
         var sql2 ='SELECT  *, COUNT(*) as total FROM Pathologies, Ordonnances WHERE idPath = Pathologies_id GROUP BY idPath';
         var sql3 = 'SELECT * FROM Medicaments'
@@ -17,5 +17,5 @@ module.exports= {
                 });
             });
         });
-    },
+    }, */
 }

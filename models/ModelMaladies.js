@@ -2,7 +2,7 @@ var db = require('../connexion/loading');
 
 module.exports= {
     //afficher la liste des Pathologies avec leurs données
-    afficher_liste_pathologies:function(callback){
+    afficher_liste_pathologie:function(callback){
         var sql ='SELECT * FROM Pathologies';
         db.query(sql, function(err,data,fields){
             if (err)throw err;
