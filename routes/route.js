@@ -1,7 +1,7 @@
 //création du routeur Express pour ce module
 const express = require('express');
 const routeur = express.Router();
-const sexinfoControle = require('../controllers/controllerAccueil.js');
+const sexinfoControle = require('../controllers/controlAccueil.js');
 
 // voir tous les messages
 routeur.get('/accueil', sexinfoControle.sexinfo_accueil)

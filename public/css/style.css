@@ -5,6 +5,19 @@
 }
 
 
+#footer {
+  padding: 0 0 20px 0;
+  font-size: 14px;
+  margin-top: 30px; 
+}
+html, body { height: 100%;}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
+
 .bckgrnd {
     width: auto;
     height: 1080px;
