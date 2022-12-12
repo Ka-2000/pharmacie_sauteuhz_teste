@@ -1,8 +1,11 @@
-
-const routeur = require('./routes/route.js');
+const mysql = require('mysql')
 const express = require('express');
 const ejs = require('ejs');
 const path     = require('path')  
+
+const iniparser = require('iniparser')
+const routeur = require('./routes/route.js');
+
 
 
 // activer les dépendances pour Express et EJS
@@ -10,6 +13,7 @@ let app = express()
 app.set('view engine', 'ejs')
 app.use(express.static('views'))
 app.use(express.static('public'))
+app.use(express.urlencoded());
 
 app.set("views",path.resolve(__dirname,'views'))
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
@@ -19,11 +23,12 @@ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use(express.json())
 app.listen(3000, () => console.log('le serveur Sauteuhz est prêt.'))
 
-// utiliser les routeurs
+ // utiliser les routeurs
 app.get('/', (req, res) => {
-    res.send('Sauteuhz est actif')
+    res.send('Le serveur Pharmacie Sauteuhz est actif !')
 })
 
+/*
 //Afficher page accueil
 .get('/accueil', function(req, res) {
     res.render('accueil')
@@ -57,4 +62,7 @@ app.get('/', (req, res) => {
 //Afficher vue consulter les stocks
 .get('/consultStock', function(req, res) {
     res.render('consultStock')
-    })
+    }) 
+*/
+
+app.use('/pharmacie_sauteuhz_test', routeur)
