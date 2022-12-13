@@ -42,13 +42,13 @@ routeur.get('/liste_pathologies', ctrlMaladie.afficher_liste_pathologies)
 .post('/fiche_pathologie/:id', ctrlMaladie.update_formulaire_pathologie)
 .post('/delete_pathologie/:id', ctrlMaladie.delete_fiche_pathologie)
 
-// Partie Client 
-routeur.get('/liste_clients', ctrlPatient.afficher_liste_clients)
-.get('/formulaire_client', ctrlPatient.afficher_formulaire_client)
-.get('/fiche_client/:id', ctrlPatient.afficher_fiche_client)
-.post('/formulaire_client', ctrlPatient.executer_formulaire_client)
-.post('/fiche_client/:id', ctrlPatient.update_formulaire_client)
-.post('/delete_client/:id', ctrlPatient.delete_fiche_client) 
+// Partie patient 
+routeur.get('/liste_patients', ctrlPatient.afficher_liste_patients)
+.get('/addPatient', ctrlPatient.afficher_formulaire_patient)
+/* .get('/fiche_patient/:id', ctrlPatient.afficher_fiche_patient) */
+.post('/formulaire_patient', ctrlPatient.executer_formulaire_patient)
+.post('/fiche_patient/:id', ctrlPatient.update_formulaire_patient)
+.post('/delete_patient/:id', ctrlPatient.delete_fiche_patient) 
 
 // Partie Ordonnance 
 routeur.get('/liste_ordonnances', ctrlOrdonnance.afficher_liste_ordonnances)
